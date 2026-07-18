@@ -32,7 +32,7 @@ public class CorridaDeCavalosApplication_v1 {
             tempo++;
             for (int i = 0; i < posCavalos.length; i++) {
                 posCavalos[i] += Math.random() * 6;
-                System.out.println("Posição do cavalo " + (i + 1) + ": " + posCavalos[i]);
+                System.out.println("Posição do cavalo " + (i + 1) + ": " + mostrarEvolucao(posCavalos[i] - 1));
                 if (posCavalos[i] >= 100) {
                     vencedor = i + 1;
                     continuarCorrendo = false;
@@ -76,5 +76,17 @@ public class CorridaDeCavalosApplication_v1 {
         } else {
             System.out.println("Você não ganhou!");
         }
+    }
+
+    public static String mostrarEvolucao(int n) {
+         String barra = "";
+         for (int i = 0; i < n; i++) {
+             barra = barra.concat(".");
+         }
+         String chegada = "|";
+         for (int i = 0; i < 100 - n; i++) {
+             chegada = " " + chegada;
+         }
+         return barra + "\uD800\uDC83" + chegada;
     }
 }
