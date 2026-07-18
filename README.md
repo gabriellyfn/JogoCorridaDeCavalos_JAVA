@@ -15,7 +15,7 @@ Obs: Lógica Aleatória -> Cada cavalo avança de forma independente e imprevis�
 
 - Interface: Terminal (Console)
 
-🎮 Como Jogar
+## 🎮 Como Jogar
 1) Clone o repositório:
 
 ```bash
