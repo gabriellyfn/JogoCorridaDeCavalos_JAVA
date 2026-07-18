@@ -67,15 +67,18 @@ public class CorridaDeCavalosApplication_v1 {
 
         //Finalização
         System.out.println("Fim de Jogo!");
+        System.out.println(" Pressione \"Enter\" para conhecer o resultado:");
+        sc.nextLine();
 
         //Definição do vencedor
-        System.out.println("O vencedor foi o Cavalo " + vencedor + "!");
-        System.out.println("Você apostou no Cavalo = " + opcao + "!");
-        if (opcao == vencedor) {
+         System.out.println("Resultado:");
+         System.out.println("O vencedor foi o Cavalo " + vencedor + "!");
+         System.out.println("Você apostou no Cavalo = " + opcao + "!");
+         if (opcao == vencedor) {
             System.out.println("Você ganhou!");
-        } else {
+         } else {
             System.out.println("Você não ganhou!");
-        }
+         }
     }
 
     public static String mostrarEvolucao(int n) {
